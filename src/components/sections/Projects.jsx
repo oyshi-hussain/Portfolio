@@ -167,7 +167,9 @@ function Projects() {
             <div className="md:w-2/3">
               <h3 className="text-green-950/60 text-2xl font-bold mb-6 mt-4">
                 MediVersed
-                <p className="text-[15px] text-green-950/80 mt-2">Ctrl+Hack+Del</p>
+                <p className="text-[15px] text-green-950/80 mt-2">
+                  Ctrl+Hack+Del
+                </p>
               </h3>
               <p className="mb-4 text-justify">
                 MediVersed is a web-based platform that matches patients with
@@ -465,7 +467,9 @@ function Projects() {
               <div className="md:w-2/3">
                 <h3 className="text-green-950/60 text-2xl font-bold mb-6">
                   Eco House
-                  <p className="text-[15px] text-green-950/80 mt-2">ElleHack2020</p>
+                  <p className="text-[15px] text-green-950/80 mt-2">
+                    ElleHack2020
+                  </p>
                 </h3>
                 <p className="mb-4 text-justify">
                   Eco-House is an educational game designed to promote
