@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import appVideo from "../../assets/video/MentalHealthAppPrototype.mp4";
+import appVideo from "../../assets/video/MentalHealthAppPrototype.webm";
 import darkCity1 from "../../assets/images/darkCity1.png";
 import endlessRunner from "../../assets/images/endlessRunner.png";
 import dextersLab from "../../assets/images/dextersLab.png";
@@ -294,7 +294,7 @@ function Projects() {
                       playsInline
                       className="w-full h-full object-cover"
                     >
-                      <source src={appVideo} type="video/mp4" />
+                      <source src={appVideo} type="video/webm" />
                       Your browser does not support the video tag.
                     </video>
 
