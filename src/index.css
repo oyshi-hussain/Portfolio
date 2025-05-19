@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 17px;
+  background: #b1af9a;
+  color: beige;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.text-outline {
+  -webkit-text-stroke: 0.5px rgba(55, 55, 55, 0.458);
+}
+
+/* .typing-effect {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+} */
+
+@layer utilities {
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s step-start infinite;
+  }
+
+  /* @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+  .animate-loading-bar {
+    animation: loading 0.8 ease infinite;
+  } */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-smooth {
+  animation: fadeInSmooth 0.8s ease-in forwards;
+}

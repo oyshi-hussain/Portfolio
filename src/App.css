@@ -1,0 +1,12 @@
+.tab {
+  text-indent: 150px;
+}
+.rainbow-text {
+  background-image: linear-gradient(to right, indigo, red, blue, green, yellow);
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* Webkit for Chrome & Safari */
+  color: transparent;
+}
+html {
+  scroll-padding-top: 8rem; /* adjust based on your navbar height */
+}
