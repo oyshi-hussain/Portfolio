@@ -3,7 +3,6 @@ import appVideo from "../../assets/video/MentalHealthAppPrototype.webm";
 import darkCity1 from "../../assets/images/darkCity1.png";
 import endlessRunner from "../../assets/images/endlessRunner.png";
 import dextersLab from "../../assets/images/dextersLab.png";
-import ecoHouse from "../../assets/images/ecoHouse.png";
 import ecoHouseStartImage from "../../assets/images/EcoHouseStartImage.png";
 import eggTimer from "../../assets/images/eggTimer.png";
 import RevealOnScroll from "./RevealOnScroll";
