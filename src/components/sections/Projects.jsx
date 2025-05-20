@@ -4,7 +4,7 @@ import darkCity1 from "../../assets/images/darkCity1.png";
 import endlessRunner from "../../assets/images/endlessRunner.png";
 import dextersLab from "../../assets/images/dextersLab.png";
 import ecoHouse from "../../assets/images/ecoHouse.png";
-import ecoHouseStartImage from "../../assets/images/ecoHouseStartImage.png";
+import ecoHouseStartImage from "../../assets/images/EcoHouseStartImage.png";
 import eggTimer from "../../assets/images/eggTimer.png";
 import RevealOnScroll from "./RevealOnScroll";
 import mediVersed from "../../assets/images/mediVersed.png";
