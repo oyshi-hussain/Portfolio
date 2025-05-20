@@ -6,7 +6,7 @@ import dextersLab from "../../assets/images/dextersLab.png";
 import ecoHouseStartImage from "../../assets/images/EcoHouseStartImage.png";
 import eggTimer from "../../assets/images/eggTimer.png";
 import RevealOnScroll from "./RevealOnScroll";
-import mediVersed from "../../assets/images/mediVersed.png";
+import mediVersed from "../../assets/images/mediversed.png";
 import zencartopia from "../../assets/images/zencartopia.png";
 import FallingLeaves from "../FallingLeaves";
 import researchPaper from "../../assets/images/MentalHealthAppReport.pdf";
