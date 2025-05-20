@@ -31,30 +31,34 @@ function MyScene() {
   }, []);
 
   return (
-    <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-      <Spline
-        scene="https://prod.spline.design/k2MjCofHjksepTnR/scene.splinecode"
-        onLoad={() => setSplineLoaded(true)}
-      />
+    <section className="relative min-h-screen overflow-hidden">
+      <div className="fixed inset-0 w-full h-full -z-10">
+        <Spline
+          scene="https://prod.spline.design/k2MjCofHjksepTnR/scene.splinecode"
+          onLoad={() => setSplineLoaded(true)}
+        />
 
-      {splineLoaded && (
-        <div
-          className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-slate-900 opacity-70 
+        {splineLoaded && (
+          <div
+            className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-slate-900 opacity-70 
         font-serif font-semibold w-[350px] max-w-full text-center whitespace-pre-wrap break-words space-y-4"
-        >
-          {!showSecondText ? (
-            <div className="text-xl typing-effect animate-fade-in">
-              {text}
-              {text !== fullText && (
-                <span className="animate-blink ml-1">|</span>
-              )}
-            </div>
-          ) : (
-            <div className="text-[14px] mt-5 animate-fade-smooth">{fullText2}</div>
-          )}
-        </div>
-      )}
-    </div>
+          >
+            {!showSecondText ? (
+              <div className="text-xl typing-effect animate-fade-in">
+                {text}
+                {text !== fullText && (
+                  <span className="animate-blink ml-1">|</span>
+                )}
+              </div>
+            ) : (
+              <div className="text-[14px] mt-5 animate-fade-smooth">
+                {fullText2}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+    </section>
   );
 }
 

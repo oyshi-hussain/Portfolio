@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../src/assets/logo.ico";
 
 function Navbar({ menuOpen, setMenuOpen }) {
   useEffect(() => {
@@ -18,8 +19,9 @@ function Navbar({ menuOpen, setMenuOpen }) {
           {/* <a> </a> logo */}
           <a
             href="/"
-            className="text-lg font-bold hover:text-[#f4ffbb] transition-colors tracking-wide"
+            className="flex items-center gap-2 text-lg font-bold hover:text-[#f4ffbb] transition-colors tracking-wide"
           >
+            <img src={logo} alt="Logo" className="w-10 h-10 object-contain" />
             Tashfia Hussain Oyshi
           </a>
 

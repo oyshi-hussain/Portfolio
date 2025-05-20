@@ -72,7 +72,7 @@ body {
   animation: fade-in 1s ease-in-out;
 }
 
-@keyframes fadeInSmooth {
+@keyframes fadeSmooth {
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -82,7 +82,6 @@ body {
     transform: translateY(0);
   }
 }
-
 .animate-fade-smooth {
-  animation: fadeInSmooth 0.8s ease-in forwards;
+  animation: fadeSmooth 0.8s ease-out forwards;
 }
