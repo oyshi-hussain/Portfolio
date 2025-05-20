@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename="/Portfolio">
+      <BrowserRouter>
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
