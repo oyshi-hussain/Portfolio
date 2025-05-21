@@ -51,7 +51,7 @@ function MyScene() {
                 )}
               </div>
             ) : (
-              <div className="text-[12px] mt-5 animate-fade-smooth">
+              <div className="text-[13px] mt-5 animate-fade-smooth">
                 {fullText2}
               </div>
             )}
