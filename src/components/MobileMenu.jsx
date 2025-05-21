@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function MobileMenu({ menuOpen, setMenuOpen }) {
   useEffect(() => {
@@ -38,8 +39,8 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
         Home
       </a> */}
 
-      <a
-        href="/about"
+      <Link
+        to="/about"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold hover:text-white my-4 transform transition-transform duration-300
             ${
@@ -48,10 +49,10 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
             `}
       >
         About
-      </a>
+      </Link>
 
-      <a
-        href="/projects"
+      <Link
+        to="/projects"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold hover:text-white my-4 transform transition-transform duration-300
             ${
@@ -60,7 +61,7 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
             `}
       >
         Projects
-      </a>
+      </Link>
 
       {/* <a
         href="#career"
@@ -74,8 +75,8 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
         Career
       </a> */}
 
-      <a
-        href="/contact"
+      <Link
+        to="/contact"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold hover:text-white my-4 transform transition-transform duration-300
             ${
@@ -84,7 +85,7 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
             `}
       >
         Contact
-      </a>
+      </Link>
 
       {/* <a
         href="#aboutme"
