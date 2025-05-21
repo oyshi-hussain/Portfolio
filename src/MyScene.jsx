@@ -32,7 +32,7 @@ function MyScene() {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      <div className="fixed inset-0 w-full h-full -z-10">
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <Spline
           scene="https://prod.spline.design/k2MjCofHjksepTnR/scene.splinecode"
           onLoad={() => setSplineLoaded(true)}

@@ -9,6 +9,7 @@ import About from "./components/sections/About";
 import "./index.css";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
