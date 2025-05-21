@@ -26,8 +26,8 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
         &#9938;
       </button>
 
-      <a
-        href="#home"
+      {/* <a
+        href="/home"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold hover:text-white my-4 transform transition-transform duration-300
             ${
@@ -36,10 +36,10 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
             `}
       >
         Home
-      </a>
+      </a> */}
 
       <a
-        href="#about"
+        href="/about"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold hover:text-white my-4 transform transition-transform duration-300
             ${
@@ -51,7 +51,7 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
       </a>
 
       <a
-        href="#projects"
+        href="/projects"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold hover:text-white my-4 transform transition-transform duration-300
             ${
@@ -62,7 +62,7 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
         Projects
       </a>
 
-      <a
+      {/* <a
         href="#career"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold hover:text-white my-4 transform transition-transform duration-300
@@ -72,10 +72,10 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
             `}
       >
         Career
-      </a>
+      </a> */}
 
       <a
-        href="#contact"
+        href="/contact"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold hover:text-white my-4 transform transition-transform duration-300
             ${
@@ -86,7 +86,7 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
         Contact
       </a>
 
-      <a
+      {/* <a
         href="#aboutme"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold hover:text-white my-4 transform transition-transform duration-300
@@ -96,7 +96,7 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
             `}
       >
         More About Me
-      </a>
+      </a> */}
     </div>
   );
 }

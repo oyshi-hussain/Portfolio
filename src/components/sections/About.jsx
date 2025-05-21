@@ -21,8 +21,8 @@ function About() {
       {/* Falling Leaves in background */}
       <FallingLeaves />
       <div className="z-10 px-4">
-        <RevealOnScroll>
-          <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
+          <RevealOnScroll>
             {/* <h2 className="text-[50px] font-bold mb-8 bg-gradient-to-r from-emerald-900 to-yellow-200 bg-clip-text text-transparent text-center drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)] tracking-wider"> */}
             <h2 className="text-[40px] font-bold mb-8 bg-gradient-to-r from-emerald-900 to-yellow-200 bg-clip-text text-transparent text-center tracking-wider">
               About Me
@@ -81,7 +81,8 @@ function About() {
                 </div>
               </div>
             </div>
-
+          </RevealOnScroll>
+          <RevealOnScroll>
             {/* Education Section */}
 
             <div className="grid grid-cols-1 md:grid-cols-2 mt-10"></div>
@@ -136,8 +137,8 @@ function About() {
                 <CoursesCards />
               </div>
             </div>
-          </div>
-        </RevealOnScroll>
+          </RevealOnScroll>
+        </div>
         <div className="mt-10">
           <Career />
         </div>

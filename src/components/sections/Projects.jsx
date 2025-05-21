@@ -23,7 +23,6 @@ function Projects() {
   return (
     <section
       id="projects"
-      // className="min-h-screen items-center justify-center py-20"
       className="min-h-screen flex justify-center pt-32 pb-16"
     >
       {/* Falling Leaves in background */}
@@ -99,127 +98,132 @@ function Projects() {
             </div>
           </RevealOnScroll>
 
-          {/* E-Commerce App */}
-          <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-yellow-500/30 hover:shadow-[0_2px_8px_rgba(96,102,53,0.2)] transition flex flex-col md:flex-row gap-6">
-            {/* Text Content */}
-            <div className="md:w-2/3">
-              <h3 className="text-green-950/60 text-2xl font-bold mb-6 mt-4">
-                ZenCartopia
-              </h3>
-              <p className="mb-4 text-justify">
-                ZenCartopia is a full-stack web application built with React for
-                the frontend and Spring Boot for the backend. It serves as an
-                e-commerce platform that allows users to sign in, edit user
-                profiles, browse products, manage their shopping cart, and place
-                orders. This project demonstrates the integration of React and
-                Spring Boot to build a complete and functional web application.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "React",
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "Java",
-                  "Spring Boot",
-                  "MySQL",
-                ].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-emerald-800/10 text-green-950 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all cursor-pointer"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="flex justify-between items-center">
-                <a
-                  href="https://github.com/oyshi-hussain/ZenCartopia"
-                  className="text-green-950/80 hover:text-emerald-600 transition-colors my-4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub Link &#8611;
-                </a>
-              </div>
-            </div>
-
-            {/* ZenCartopia Image and Figma Prototype */}
-            <div className="md:w-1/2 w-full h-auto m-5">
-              <a
-                href="https://www.figma.com/design/QoKbawuLQx1RH8hEJrvlGa/EECS4413ZenCartopiApparel?node-id=0-1&t=zHeCBROTv9zAbFxi-1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={zencartopia}
-                  alt="E-commerce App Image"
-                  className="w-full h-auto rounded-lg object-cover shadow-md hover:opacity-60 transition"
-                />
-              </a>
-            </div>
-          </div>
-
-          {/* Ctrl-Del-Hack Hackathon Website */}
-          <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-yellow-500/30 hover:shadow-[0_2px_8px_rgba(96,102,53,0.2)] transition flex flex-col md:flex-row gap-6">
-            {/* Text Content */}
-            <div className="md:w-2/3">
-              <h3 className="text-green-950/60 text-2xl font-bold mb-6 mt-4">
-                MediVersed
-                <p className="text-[15px] text-green-950/80 mt-2">
-                  Ctrl+Hack+Del
+          <RevealOnScroll>
+            {/* E-Commerce App */}
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-yellow-500/30 hover:shadow-[0_2px_8px_rgba(96,102,53,0.2)] transition flex flex-col md:flex-row gap-6">
+              {/* Text Content */}
+              <div className="md:w-2/3">
+                <h3 className="text-green-950/60 text-2xl font-bold mb-6 mt-4">
+                  ZenCartopia
+                </h3>
+                <p className="mb-4 text-justify">
+                  ZenCartopia is a full-stack web application built with React
+                  for the frontend and Spring Boot for the backend. It serves as
+                  an e-commerce platform that allows users to sign in, edit user
+                  profiles, browse products, manage their shopping cart, and
+                  place orders. This project demonstrates the integration of
+                  React and Spring Boot to build a complete and functional web
+                  application.
                 </p>
-              </h3>
-              <p className="mb-4 text-justify">
-                MediVersed is a web-based platform that matches patients with
-                nurses based on specific care needs and nursing expertise. Check
-                out the GitHub link to see how it works.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "Figma",
-                  "React",
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "Node.js",
-                  "MongoDB",
-                ].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-emerald-800/10 text-green-950 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all cursor-pointer"
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {[
+                    "React",
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Java",
+                    "Spring Boot",
+                    "MySQL",
+                  ].map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-emerald-800/10 text-green-950 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all cursor-pointer"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex justify-between items-center">
+                  <a
+                    href="https://github.com/oyshi-hussain/ZenCartopia"
+                    className="text-green-950/80 hover:text-emerald-600 transition-colors my-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {tech}
-                  </span>
-                ))}
+                    GitHub Link &#8611;
+                  </a>
+                </div>
               </div>
-              <div className="flex justify-between items-center">
+
+              {/* ZenCartopia Image and Figma Prototype */}
+              <div className="md:w-1/2 w-full h-auto m-5">
                 <a
-                  href="https://github.com/oyshi-hussain/ctrl-hack-del"
-                  className="text-green-950/80 hover:text-emerald-600 transition-colors my-4"
+                  href="https://www.figma.com/design/QoKbawuLQx1RH8hEJrvlGa/EECS4413ZenCartopiApparel?node-id=0-1&t=zHeCBROTv9zAbFxi-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GitHub Link &#8611;
+                  <img
+                    src={zencartopia}
+                    alt="E-commerce App Image"
+                    className="w-full h-auto rounded-lg object-cover shadow-md hover:opacity-60 transition"
+                  />
                 </a>
               </div>
             </div>
+          </RevealOnScroll>
 
-            {/* Mediversed Image and Figma Prototype */}
-            <div className="md:w-1/3 w-full h-auto m-5">
-              <a
-                href="https://www.figma.com/design/imLQkINAwPxOpcuDoT1Ccj/Hospital-App?node-id=0-1&t=fEwztCqjNWzxNdef-1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={mediVersed}
-                  alt="MediVersed Image"
-                  className="w-full h-auto rounded-lg object-cover shadow-md hover:opacity-60 transition"
-                />
-              </a>
+          <RevealOnScroll>
+            {/* Ctrl-Del-Hack Hackathon Website */}
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-yellow-500/30 hover:shadow-[0_2px_8px_rgba(96,102,53,0.2)] transition flex flex-col md:flex-row gap-6">
+              {/* Text Content */}
+              <div className="md:w-2/3">
+                <h3 className="text-green-950/60 text-2xl font-bold mb-6 mt-4">
+                  MediVersed
+                  <p className="text-[15px] text-green-950/80 mt-2">
+                    Ctrl+Hack+Del
+                  </p>
+                </h3>
+                <p className="mb-4 text-justify">
+                  MediVersed is a web-based platform that matches patients with
+                  nurses based on specific care needs and nursing expertise.
+                  Check out the GitHub link to see how it works.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {[
+                    "Figma",
+                    "React",
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Node.js",
+                    "MongoDB",
+                  ].map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-emerald-800/10 text-green-950 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all cursor-pointer"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex justify-between items-center">
+                  <a
+                    href="https://github.com/oyshi-hussain/ctrl-hack-del"
+                    className="text-green-950/80 hover:text-emerald-600 transition-colors my-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Link &#8611;
+                  </a>
+                </div>
+              </div>
+
+              {/* Mediversed Image and Figma Prototype */}
+              <div className="md:w-1/3 w-full h-auto m-5">
+                <a
+                  href="https://www.figma.com/design/imLQkINAwPxOpcuDoT1Ccj/Hospital-App?node-id=0-1&t=fEwztCqjNWzxNdef-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={mediVersed}
+                    alt="MediVersed Image"
+                    className="w-full h-auto rounded-lg object-cover shadow-md hover:opacity-60 transition"
+                  />
+                </a>
+              </div>
             </div>
-          </div>
+          </RevealOnScroll>
 
           {/* Mental Health App Project */}
 
