@@ -40,18 +40,18 @@ function MyScene() {
 
         {splineLoaded && (
           <div
-            className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-slate-900 opacity-70 
-        font-serif font-semibold w-[350px] max-w-full text-center whitespace-pre-wrap break-words space-y-4"
+            className="absolute top-[47%] left-[53%] transform -translate-x-1/2 -translate-y-1/2 text-slate-900 opacity-70 
+        font-serif font-semibold w-[320px] max-w-full text-center whitespace-pre-wrap break-words space-y-4"
           >
             {!showSecondText ? (
-              <div className="text-xl typing-effect animate-fade-in">
+              <div className="text-lg typing-effect animate-fade-in">
                 {text}
                 {text !== fullText && (
                   <span className="animate-blink ml-1">|</span>
                 )}
               </div>
             ) : (
-              <div className="text-[14px] mt-5 animate-fade-smooth">
+              <div className="text-[12px] mt-5 animate-fade-smooth">
                 {fullText2}
               </div>
             )}
