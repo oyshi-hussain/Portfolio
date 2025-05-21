@@ -4,7 +4,7 @@ import catAnimation from "../assets/cat.json";
 
 function CatAnimation() {
   return (
-    <div className="w-100 mb-10">
+    <div className="absolute left-6 w-100 mb-10">
       <Player
         autoplay
         loop
