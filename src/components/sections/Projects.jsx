@@ -10,10 +10,12 @@ import mediVersed from "../../assets/images/mediversed.png";
 import zencartopia from "../../assets/images/zencartopia.png";
 import FallingLeaves from "../FallingLeaves";
 import researchPaper from "../../assets/images/MentalHealthAppReport.pdf";
+import InMobileVersion from "../InMobileVersion";
 
 function Projects() {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const isMobile = InMobileVersion();
 
   const handlePlay = () => {
     videoRef.current.play();
@@ -25,8 +27,11 @@ function Projects() {
       id="projects"
       className="min-h-screen flex justify-center pt-32 pb-16"
     >
-      {/* Falling Leaves in background */}
-      <FallingLeaves />
+      {/* 🌿 Show leaves only if not on mobile */}
+      {!isMobile && <FallingLeaves />}
+
+      {/* Falling Leaves in background
+      <FallingLeaves /> */}
       <div className="max-w-5xl mx-auto px-4">
         <RevealOnScroll>
           <h2 className="text-[40px] font-bold mb-8 bg-gradient-to-r from-emerald-900 to-yellow-200 bg-clip-text text-transparent text-center tracking-wider">

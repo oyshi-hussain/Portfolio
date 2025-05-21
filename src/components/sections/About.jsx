@@ -8,18 +8,23 @@ import RevealOnScroll from "./RevealOnScroll";
 import Career from "./Career";
 import FallingLeaves from "../FallingLeaves";
 import resume from "../../assets/images/resume.pdf";
+import InMobileVersion from "../InMobileVersion";
 
 function About() {
   const frontendSkills = ["React", "TailwindCSS", "HTML", "CSS", "JavaScript"];
   const backendSkills = ["Python", "Java", "Node.js", "C", "C#"];
+  const isMobile = InMobileVersion();
 
   return (
     <section
       id="about"
       className="min-h-screen flex justify-center pt-32 pb-16 relative overflow-hidden"
     >
-      {/* Falling Leaves in background */}
-      <FallingLeaves />
+      {/* 🌿 Show leaves only if not on mobile */}
+      {!isMobile && <FallingLeaves />}
+
+      {/* Falling Leaves in background
+      <FallingLeaves /> */}
       <div className="z-10 px-4">
         <div className="max-w-5xl mx-auto px-4">
           <RevealOnScroll>
