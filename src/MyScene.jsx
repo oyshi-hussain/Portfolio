@@ -36,7 +36,7 @@ function MyScene() {
     <section className="relative min-h-screen overflow-hidden">
       {/* Spinner Loading Bar */}
       {!splineLoaded && (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#fefeeece] z-50">
+        <div className="absolute inset-0 flex items-center justify-center z-50">
           <Player
             autoplay
             loop
