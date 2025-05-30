@@ -41,15 +41,27 @@ function Navbar({ menuOpen, setMenuOpen }) {
             <NavLink to="/" className={linkClass}>
               Home
             </NavLink>
-            <NavLink to="/about" className={linkClass}>
+            <NavLink
+              to="/about"
+              className={linkClass}
+              onClick={() => {
+                //Scrolls up only if it's on the same about page
+                if (window.location.pathname === "/about") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
+            >
               About
             </NavLink>
+            <a
+              href="/about#career-section"
+              className="text-grey-300 hover:text-[#f4ffbb] transition-colors"
+            >
+              Career
+            </a>
             <NavLink to="/projects" className={linkClass}>
               Projects
             </NavLink>
-            {/* <NavLink to="/career" className={linkClass}>
-              Career
-            </NavLink> */}
             <NavLink to="/contact" className={linkClass}>
               Contact
             </NavLink>

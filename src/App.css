@@ -8,5 +8,6 @@
   color: transparent;
 }
 html {
-  scroll-padding-top: 8rem; /* adjust based on your navbar height */
+  scroll-padding-top: 8rem; /* adjust based on navbar height */
+  scroll-behavior: smooth;
 }

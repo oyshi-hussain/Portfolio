@@ -1,4 +1,5 @@
-import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import logo from "../../assets/yorklogo.jpg";
 import zebralogo from "../../assets/zebra.png";
 import "../../App.css";
@@ -9,11 +10,25 @@ import Career from "./Career";
 import FallingLeaves from "../FallingLeaves";
 import resume from "../../assets/images/resume.pdf";
 import InMobileVersion from "../InMobileVersion";
+import ScrollIndicator from "../ScrollIndicator";
 
 function About() {
   const frontendSkills = ["React", "TailwindCSS", "HTML", "CSS", "JavaScript"];
   const backendSkills = ["Python", "Java", "Node.js", "C", "C#"];
   const isMobile = InMobileVersion();
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 0); // wait for render
+      }
+    }
+  }, [location]);
 
   return (
     <section
@@ -33,25 +48,25 @@ function About() {
               About Me
             </h2>
 
-            <div className="glass rounded-xl p-8 border-amber-100/20 border hover:shadow-lg hover:-translate-y-1 transition-all mb-10">
+            <div className="glass rounded-xl p-8 border-amber-100/20 border hover:shadow-lg hover:-translate-y-1 transition-all mb-0">
               <div className="text-grey-300 mb-6 font-sans text-justify space-y-4">
                 <p>
-                  Hello! I'm Tashfia Hussain Oyshi, a recent Computer Science
-                  graduate from York University. My interest in technology began
-                  with a fascination for robotics and how they navigate the
-                  world autonomously. While I haven’t worked hands-on with
-                  robotics yet, I’m continuing to sharpen my skills in Python,
-                  React, and game development with Unity.
+                  Hi! I'm Tashfia Hussain Oyshi, a Computer Science graduate
+                  from York University. My interest in technology began with a
+                  fascination for robotics and how they navigate the world
+                  autonomously. While I haven’t worked hands-on with robotics
+                  yet, I’m continuing to sharpen my skills in Python, React, and
+                  game development with Unity.
                 </p>
                 <p>
                   Outside of tech, I have a deep passion for travel, discovering
                   new places, savouring authentic cuisine, and capturing moments
                   through photography &#128248;. I enjoy playing basketball,
-                  creating digital art, and have recently grown to love reading.
-                  I also find calm and inspiration through playing the guitar.
-                  Feel free to explore my work and check out the Projects
-                  section to see what I’ve been building. If something catches
-                  your eye, I’d love to connect!
+                  creating digital art, and reading. I also find comfort and
+                  inspiration through playing the guitar. Feel free to explore
+                  my work and check out the Projects section to see what I’ve
+                  been building. If something catches your eye, I’d love to
+                  connect!
                 </p>
               </div>
 
@@ -87,6 +102,11 @@ function About() {
               </div>
             </div>
           </RevealOnScroll>
+
+          <div className="flex justify-center mt-2 mb-2">
+            <ScrollIndicator />
+          </div>
+
           <RevealOnScroll>
             {/* Education Section */}
 
@@ -144,7 +164,9 @@ function About() {
             </div>
           </RevealOnScroll>
         </div>
-        <div className="mt-10">
+
+        {/* Career Section */}
+        <div id="career-section" className="mt-10">
           <Career />
         </div>
       </div>
