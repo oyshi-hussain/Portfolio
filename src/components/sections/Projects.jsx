@@ -5,6 +5,7 @@ import endlessRunner from "../../assets/images/endlessRunner.png";
 import dextersLab from "../../assets/images/dextersLab.png";
 import ecoHouseStartImage from "../../assets/images/EcoHouseStartImage.png";
 import eggTimer from "../../assets/images/eggTimer.png";
+import weatherApp from "../../assets/images/weatherApp.png";
 import RevealOnScroll from "./RevealOnScroll";
 import mediVersed from "../../assets/images/mediversed.png";
 import zencartopia from "../../assets/images/zencartopia.png";
@@ -41,6 +42,58 @@ function Projects() {
 
         <div className="flex flex-col gap-12">
           {/*  */}
+
+          <RevealOnScroll>
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-yellow-500/30 hover:shadow-[0_2px_8px_rgba(96,102,53,0.2)] transition flex flex-col md:flex-row gap-6">
+              {/* Text Content */}
+              <div className="md:w-2/3">
+                <h3 className="text-green-950/60 text-2xl font-bold mb-6 mt-4">
+                  Weather App
+                </h3>
+                <p className="mb-4 text-justify">
+                  A weather app is a simple weather forecast mobile application
+                  built with React Native using Expo. It fetches real-time
+                  weather data from the Open-Meteo API and geolocation using
+                  OpenWeatherMap Geocoding API.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {[
+                    "React Native",
+                    "Expo",
+                    "JavaScript",
+                    "Open-Meteo API",
+                    "OpenWeatherMap Geocoding API",
+                  ].map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-emerald-800/10 text-green-950 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all cursor-pointer"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex justify-between items-center">
+                  <a
+                    href="https://github.com/oyshi-hussain/weather-app"
+                    className="text-green-950/80 hover:text-emerald-600 transition-colors my-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Link &#8611;
+                  </a>
+                </div>
+              </div>
+
+              {/* Weather App Prototype */}
+              <div className="md:w-1/3 h-auto m-5 flex justify-end">
+                <img
+                  src={weatherApp}
+                  alt="Weather App Image"
+                  className="w-2/3 h-auto rounded-lg shadow-md hover:opacity-60 transition"
+                />
+              </div>
+            </div>
+          </RevealOnScroll>
 
           {/* Egg Timer Electron App */}
           <RevealOnScroll>

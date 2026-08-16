@@ -8,7 +8,7 @@ import CoursesCards from "../CoursesCards";
 import RevealOnScroll from "./RevealOnScroll";
 import Career from "./Career";
 import FallingLeaves from "../FallingLeaves";
-import resume from "../../assets/images/resume.pdf";
+import resume from "../../assets/images/resumeTechnical.pdf";
 import InMobileVersion from "../InMobileVersion";
 import ScrollIndicator from "../ScrollIndicator";
 

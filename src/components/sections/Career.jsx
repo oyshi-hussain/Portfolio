@@ -3,10 +3,88 @@ import yorklogo from "../../assets/yorklogo.jpg";
 import libertylogo from "../../assets/libertylogo.jpg";
 import lassondelogo from "../../assets/lassondelogo.jpg";
 import yorkulogo from "../../assets/yorkulogo.png";
+import schulichlogo from "../../assets/schulichlogo.png";
+import ellehackslogo from "../../assets/ellehackslogo.png";
+import deloittelogo from "../../assets/deloittelogo.png";
 import RevealOnScroll from "./RevealOnScroll";
 import PeerHelperAward from "../../assets/images/PeerHelperAward.pdf";
 
 const experiences = [
+  {
+    title: "Junior IT Analyst",
+    company: "Deloitte",
+    date: ["Mar 2026 - Present"],
+    logo: deloittelogo,
+    description: [
+      "Set up, configure, and deploy 100+ Windows and macOS laptops for new hires, supporting smooth onboarding.",
+      "Troubleshoot hardware, software, and network issues, providing timely end-user support.",
+      "Handle ServiceNow tickets for onboarding and laptop rollouts, including user updates, asset tracking, and device setup.",
+      "Support onboarding and offboarding processes, including device setup, data backup, imaging, and secure decommissioning.",
+      "Assist with laptop rollout activities and asset coordination.",
+      "Handle new hire and departure tickets, ensuring compliance with IT and security policies.",
+      "Perform meeting room checks to ensure AV equipment (touch panels, displays, microphones, and cameras) is working properly.",
+      "Use Active Directory, Azure, Intune, JAMF, Absolute, and Secret Server for user management and device provisioning.",
+      "Leverage Microsoft Copilot and internal GenAI tools to support troubleshooting, documentation, and IT support workflows.",
+      "Provide technical support through ServiceNow, troubleshooting and resolving hardware, software, and access-related issues for end users.",
+      "Provide front-of-house IT support, assisting users with technical issues and resolving problems promptly to minimize disruptions.",
+    ],
+  },
+  {
+    title: "Workstation Support Assistant",
+    company: "Library Information Systems, York University",
+    date: ["Jan 2026 - Feb 2026"],
+    logo: yorklogo,
+    description: [
+      "Provided technical support for library workstations and software.",
+      "Performed basic hardware and software troubleshooting using a ticketing system.",
+      "Assisted with system setup, software updates, and ongoing maintenance.",
+    ],
+  },
+  {
+    title: "Exam Monitor & Support Assistance",
+    company: "York University",
+    date: ["Dec 2025"],
+    logo: yorklogo,
+    description: [
+      "Supervised exams and collaborated with faculty to uphold standards.",
+      "Managed materials and provided instructions to the students.",
+    ],
+  },
+  {
+    title: "Library Facilities Assistant",
+    company: "York University Library Facilities",
+    date: ["Sep 2025 - Feb 2026"],
+    logo: yorklogo,
+    description: [
+      "Assisted students and patrons with printing services, photocopying, and general inquiries.",
+      "Monitored all York University library spaces, identifying issues and promptly coordinating with maintenance staff.",
+      "Supported daily operations by loading paper, troubleshooting, and clearing paper jams in printers and photocopiers.",
+      "Assisted students and patrons to ensure a smooth and positive library experience.",
+    ],
+  },
+  {
+    title: "PT Concierge",
+    company: "Office of the Executive Officer, Schulich School of Business",
+    date: ["Sep 2025 - Dec 2025"],
+    logo: schulichlogo,
+    description: [
+      "Assisted students and patrons with inquiries, managed classroom access and bookings, and ensured classroom equipment is functioning.",
+      "Coordinated with IT or security for non-routine issues.",
+      "Maintained Lost & Found, dispensed equipment and keys, and responded to incidents according to York Security protocols.",
+    ],
+  },
+  {
+    title: "Design Executive",
+    company: "ElleHacks",
+    date: ["Jan 2026 - Feb 2026"],
+    logo: ellehackslogo,
+    description: [
+      "Designed website content, event branding, and the official ElleHacks logo.",
+      "Produced visual assets and layouts for the event dashboard, sponsorship packages, and promotional posters.",
+      "Supported event operations by volunteering on-site and assisting participants.",
+      "Collaborated with co-chairs and cross-functional teams to maintain a consistent user experience and cohesive branding.",
+    ],
+  },
   {
     title: "Exam Monitor & Support Assistance",
     company: "York University",
